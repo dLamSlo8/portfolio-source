@@ -1,0 +1,28 @@
+/* React Transition Group */
+.page-enter {
+    opacity: 0;
+    transform: translateY(-5%);
+}
+
+.page-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms ease-in-out,
+                transform 300ms ease-in-out;
+}
+
+.page-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.page-exit-active {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 300ms ease-in-out,
+                transform 2000ms ease-in-out;
+}
+
+.hand-appear-active {
+    animation: wave 0.5s ease-in-out 0s 1;
+}

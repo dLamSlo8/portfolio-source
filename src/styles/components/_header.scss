@@ -1,0 +1,48 @@
+// Header styles
+
+// .header {
+//     padding: 5rem;
+//     min-height: 100vh;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     background-color: var(--color-secondary);
+//     font-family: var(--font-primary);
+// }
+.heading {
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+
+    &--sm {
+        font-size: 1.25rem;
+        
+    }
+
+    &--normal {
+        font-size: 1.25rem;
+    }
+
+    &--lg {
+        font-size: 1.5rem;
+    }
+
+    &--xl {
+        font-size: 3rem;
+    }
+
+    &--primary {
+        color: var(--color-primary);
+    }
+
+    &--space-b {
+        margin-bottom: 1rem;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+
+}

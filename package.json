@@ -11,21 +11,33 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
+    "@svgr/webpack": "^5.4.0",
+    "autoprefixer": "^9.8.6",
+    "deviceful": "^0.9.5",
     "gatsby": "^2.24.54",
+    "gatsby-plugin-layout": "^1.3.10",
+    "gatsby-plugin-postcss": "^2.3.11",
+    "gatsby-plugin-sass": "^2.3.12",
+    "gatsby-plugin-svgr": "^2.0.2",
+    "gatsby-source-filesystem": "^2.3.29",
+    "gatsby-transformer-remark": "^2.8.34",
+    "headroom.js": "^0.11.0",
+    "node-sass": "^4.14.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-swipeable-views": "^0.13.9",
+    "react-transition-group": "^4.4.1"
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "prettier": "2.1.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/dLamSlo8/dLamSlo8.github.io/"
   }
 }

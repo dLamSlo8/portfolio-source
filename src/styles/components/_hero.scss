@@ -1,0 +1,49 @@
+.hero {
+
+    &__name {
+        font-size: 3rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-weight: normal;
+    }
+
+    &__hand-emoji {
+        display: inline-block;
+        transform-origin: 85% 85% 0;
+        cursor: default;
+    }
+
+    &__hand-emoji:hover {
+        animation: wave 0.5s ease-in-out 0s 1;
+    }
+
+
+    &__description {
+        width: 75%;
+        font-size: 2.5rem;
+        font-weight: normal;
+    }
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(-20deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    75% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+}

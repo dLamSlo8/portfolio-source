@@ -1,0 +1,21 @@
+.icon {
+    height: 30px;
+    width: 30px;
+    fill: var(--color-secondary);
+
+    &--small {
+        height: 25px;
+        width: 25px;
+    }
+
+    &--transition-fill {
+        @include ts(fill, 200ms);
+    }
+}
+
+.icon-wrapper {
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    margin-right: 2rem;
+}
