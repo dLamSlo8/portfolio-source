@@ -11,7 +11,6 @@ export default function Hero() {
             </CSSTransition>
             </h1>
             <h2 className="hero__description">I’m a <strong>frontend developer</strong> who enjoys bringing concepts to life with <strong>responsive websites</strong> and <strong>web apps</strong>.</h2>
-            <HeaderLinks />
         </section>
     )
 }

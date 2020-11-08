@@ -1,0 +1,11 @@
+.links-body {
+    &__heading {
+        margin-bottom: 1rem;
+    }
+    
+    &__sub-text {
+        margin-top: 0.25rem;
+        font-weight: 600;
+        color: var(--color-primary);
+    }
+}

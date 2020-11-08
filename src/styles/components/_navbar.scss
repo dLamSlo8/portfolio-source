@@ -7,18 +7,19 @@
         top: 0;
         left: 0;
         justify-content: flex-end;
-        padding: 1rem 2rem;
+        padding: 0rem 2rem;
         z-index: 10;
         background-color: rgba(255, 255, 255, 0.8);
-        transition: box-shadow 150ms ease-in-out;
+        transform: translateY(1rem);
+        transition: box-shadow 150ms ease-in-out,
+                    transform 150ms ease-in-out;
         backdrop-filter: blur(7.5px);
     }
 
     &--scrolled {
         box-shadow: 0px 3px 6px 5px rgba(0, 0, 0, 0.1);
+        transform: translateY(0);
     }
-
-
     
     &__items {
         list-style-type: none;
@@ -54,6 +55,7 @@
         }
     
         &:hover .navbar__icon {
+            fill: var(--color-secondary);
             color: var(--color-secondary);
         }
     
@@ -98,7 +100,8 @@
 
     &__icon {
         margin-right: 0.75rem;
-        transition: fill 200ms ease-in-out;
+        transition: fill 200ms ease-in-out,
+                    color 200ms ease-in-out;
         color: black;
     }
 }

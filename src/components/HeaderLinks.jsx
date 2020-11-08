@@ -1,10 +1,10 @@
 import React from 'react';
-import NavItem from './NavItem';
+import NavItem from './layouts/navbar/NavItem';
 import { ReactComponent as EmailIcon } from '../media/icons/mail.svg';
 import { ReactComponent as DocumentIcon } from '../media/icons/document.svg';
 import { ReactComponent as GithubIcon } from '../media/icons/github.svg';
 import { ReactComponent as LinkedInIcon } from '../media/icons/linkedin.svg';
-import Resume from '../files/resume.pdf';
+import Resume from '../media/files/resume.pdf';
 
 export default function Links({ scrolled }) {
     return (

@@ -20,4 +20,25 @@
         display: flex;
         align-items: center;
     }
+
+    &__body {
+        position: relative;
+        padding-left: calc(30px + 1.75rem);
+        margin-top: 2rem;
+        margin-left: 1.25rem;
+    
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 300px;
+            border-left: 4px solid var(--color-primary);
+        }
+
+        &--short::before {
+            height: 200px;
+        }
+    }
 }

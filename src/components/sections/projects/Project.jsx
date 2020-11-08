@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import { CSSTransition } from 'react-transition-group';
 
 import ProjectMedia from './ProjectMedia';
-export default function Project({ projectInfo: { frontmatter: { title, external, github, stack, desktop_cover, desktop_alt, mobile_cover, mobile_alt, learned, improved }, html: bodyContent }}) {
+export default function Project({ projectInfo: { frontmatter: { title, external, github, stack, desktop_cover, desktop_alt, mobile_cover, mobile_alt, learned }, html: bodyContent }}) {
     const { ref, inView, entry } = useInView({
         triggerOnce: true,
     });

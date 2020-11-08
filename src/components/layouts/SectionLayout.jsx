@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function SectionLayout({ id, icon, title, children }) {
+export default function SectionLayout({ id, icon, title, bodyClass, children }) {
     return (
         <section id={id} className="section-layout">
             <header className="section-layout__header">
@@ -9,7 +9,9 @@ export default function SectionLayout({ id, icon, title, children }) {
                 </div>
                 <h1 className="heading heading--xxl heading--primary">{title}</h1>
             </header>
-            {children}
+            <div className={`section-layout__body ${bodyClass ?? ''}`}>
+                {children}
+            </div>
         </section>
     )
 }

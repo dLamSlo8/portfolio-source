@@ -21,10 +21,12 @@
     }
 
     &__description {
-        font-family: var(--font-secondary);
         width: 100%;
         flex-shrink: 0.75;
-        line-height: 1.5;
+    }
+
+    &__initial-p {
+        margin-top: 0;
     }
 
     &__skills {
