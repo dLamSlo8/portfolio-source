@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import NavbarLayout from './layouts/navbar/NavbarLayout';
-import Navbar from './Navbar';
 import Hero from './Hero';
 import { ReactComponent as DownIcon } from '../media/icons/chevron-down.svg';
 import { ReactComponent as PersonIcon } from '../media/icons/user.svg';
@@ -18,9 +17,9 @@ export default function Home() {
         <header className="header" ref={heroForwardRef}>
             <NavbarLayout
             rootClass={`navbar--main ${!inView ? 'navbar--scrolled' : ''}`}>
-                <NavItem icon={<PersonIcon />} text="about me" linkProps={{ href: '#about' }} />
-                <NavItem icon={<ProjectIcon />} text="projects" linkProps={{ href: '#projects' }} />
-                <NavItem icon={<LinkIcon />} text="my links" linkProps={{ href: '#links '}} />
+                <NavItem icon={<PersonIcon />} text="About Me" linkProps={{ href: '#about' }} />
+                <NavItem icon={<ProjectIcon />} text="Projects" linkProps={{ href: '#projects' }} />
+                <NavItem icon={<LinkIcon />} text="My Links" linkProps={{ href: '#links '}} />
             </NavbarLayout>
             <Hero />
             <div className="header__learn-more">

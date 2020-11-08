@@ -19,15 +19,15 @@ export default function LinkSection() {
             <NavbarLayout
             rootClass="mb-2" 
             ariaLabel="Info Links">
-                <NavItem icon={<DocumentIcon />} text="resume" rootClass="navbar__item--links" linkProps={{ href: Resume }} />
-                <NavItem icon={<GithubIcon />} text="github" rootClass="navbar__item--links" linkProps={{ href: 'https://www.github.com/dLamSlo8' }} />
-                <NavItem icon={<LinkedInIcon />} text="linkedin™" rootClass="navbar__item--links" linkProps={{ href: 'https://www.linkedin.com/in/derek-lam-slo8/' }} />
+                <NavItem icon={<DocumentIcon />} text="Resume" rootClass="navbar__item--links" linkProps={{ href: Resume }} />
+                <NavItem icon={<GithubIcon />} text="GitHub" rootClass="navbar__item--links" linkProps={{ href: 'https://www.github.com/dLamSlo8' }} />
+                <NavItem icon={<LinkedInIcon />} text="LinkedIn™" rootClass="navbar__item--links" linkProps={{ href: 'https://www.linkedin.com/in/derek-lam-slo8/' }} />
             </NavbarLayout>
             <h2 className="heading heading--lg">Here's where you can contact me.</h2>
             <p className="links-body__sub-text">I'm actively looking for job opportunities as a frontend developer, so if I piqued your interest, feel free to reach out!</p>
             <NavbarLayout ariaLabel="Contact Links">
-                <NavItem icon={<EmailIcon />} text="email" rootClass="navbar__item--links" linkProps={{ href: 'mailto:dereklam67@gmail.com' }} />
-                <NavItem icon={<LinkedInIcon />} text="linkedin™" rootClass="navbar__item--links" linkProps={{ href: 'https://www.linkedin.com/in/derek-lam-slo8/' }} />
+                <NavItem icon={<EmailIcon />} text="Email" rootClass="navbar__item--links" linkProps={{ href: 'mailto:dereklam67@gmail.com' }} />
+                <NavItem icon={<LinkedInIcon />} text="LinkedIn™" rootClass="navbar__item--links" linkProps={{ href: 'https://www.linkedin.com/in/derek-lam-slo8/' }} />
             </NavbarLayout>
         </SectionLayout>
     )
