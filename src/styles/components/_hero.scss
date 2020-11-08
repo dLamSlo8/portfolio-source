@@ -1,4 +1,6 @@
 .hero {
+    display: flex;
+    flex-direction: column;
 
     &__name {
         font-size: 3rem;
@@ -23,27 +25,4 @@
         font-size: 2.5rem;
         font-weight: normal;
     }
-}
-
-@keyframes wave {
-    0% {
-        transform: rotate(0);
-    }
-
-    25% {
-        transform: rotate(-20deg);
-    }
-
-    50% {
-        transform: rotate(0);
-    }
-
-    75% {
-        transform: rotate(-20deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-
 }

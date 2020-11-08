@@ -17,19 +17,28 @@ module.exports = {
               path: `${__dirname}/src/content/projects`
           }
       },
+      {
+          resolve: 'gatsby-source-filesystem',
+          options: {
+              name: 'media',
+              path: `${__dirname}/src/media`
+          }
+      },
       'gatsby-transformer-remark',
       'gatsby-plugin-sass',
       'gatsby-plugin-svgr',
+      'gatsby-transformer-sharp',
+      'gatsby-plugin-sharp',
+      {
+          resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
+          options: {
+              devMode: true
+          }
+      },
       {
           resolve: 'gatsby-plugin-postcss',
           options: {
               postCssPlugins: [require('autoprefixer')]
-          }
-      },
-      {
-          resolve: 'gatsby-plugin-layout',
-          options: {
-              component: require.resolve('./src/components/Layout.jsx')
           }
       }
   ],

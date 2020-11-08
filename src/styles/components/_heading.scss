@@ -1,0 +1,37 @@
+.heading {
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+
+    &--sm {
+        font-size: 1.25rem;
+        
+    }
+
+    &--normal {
+        font-size: 1.25rem;
+    }
+
+    &--lg {
+        font-size: 1.5rem;
+    }
+
+    &--xl {
+        font-size: 2rem;
+    }
+
+    &--xxl {
+        font-size: 3rem;
+    }
+
+    &--primary {
+        color: var(--color-primary);
+    }
+
+    &--space-b {
+        margin-bottom: 1rem;
+    }
+}
+
+// Used for headings that contain more than just text.\

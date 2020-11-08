@@ -1,7 +1,16 @@
 .icon {
     height: 30px;
     width: 30px;
-    fill: var(--color-secondary);
+    display: inline-block;
+
+    &--primary {
+        fill: var(--color-primary);
+    }
+
+    &--xs {
+        height: 20px;
+        width: 20px;
+    }
 
     &--small {
         height: 25px;
@@ -11,11 +20,50 @@
     &--transition-fill {
         @include ts(fill, 200ms);
     }
+
+    &--space-r {
+        margin-right: 1rem;
+    }
+
+    &--secondary {
+        color: var(--color-secondary);
+    }
 }
 
 .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     padding: 0.5rem;
     border-radius: 50%;
-    background-color: var(--color-primary);
-    margin-right: 2rem;
+
+    &--button {
+        background-color: inherit;
+        border: none;
+    }
+    
+    &--primary {
+        background-color: var(--color-primary);
+    }
+
+    &--space-r {
+        margin-right: 2rem;
+    }
+
+    &--rounded-normal {
+        border-radius: 0.5rem;
+    }
+
+    &--transition {
+        @include ts(background-color, 200ms);
+    }
+
+    &--hover {
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--color-primary-light-opaque);
+        }
+    }
 }

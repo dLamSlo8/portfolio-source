@@ -1,30 +1,21 @@
-import React from 'react';
-import { ReactComponent as PersonIcon } from '../../static/user.svg';
-import { ReactComponent as ProjectIcon } from '../../static/code.svg';
-import { ReactComponent as LinkIcon } from '../../static/link.svg';
-import { Link } from 'gatsby';
+import React, { useEffect } from 'react';
+import { ReactComponent as PersonIcon } from '../media/icons/user.svg';
+import { ReactComponent as ProjectIcon } from '../media/icons/code.svg';
+import { ReactComponent as LinkIcon } from '../media/icons/link.svg';
+import NavItem from './NavItem';
 
-function NavbarItem({ icon, text }) {
-    return (
-        <li className="navbar__item">
-            <Link to={`/${text}`} className="navbar__link">
-                <div className="navbar__icon">
-                    {icon}
-                </div>
-                {text}
-            </Link>
-        </li>
-    )
-}
 
-export default function Navbar() {
+
+export default function Navbar({ inView }) {
     return (
-        <nav className="navbar" role="navigation">
-            <ul className="navbar__items">
-                <NavbarItem icon={<PersonIcon />} text="about" />
-                <NavbarItem icon={<ProjectIcon />} text="projects" />
-                <NavbarItem icon={<LinkIcon />} text="links" />
-            </ul>
-        </nav>
+        <>
+            <nav className={`navbar navbar--main ${!inView && 'navbar--scrolled'}`} role="navigation">
+                <ul className="navbar__items">
+                    <NavItem icon={<PersonIcon />} text="about me" linkProps={{ href: '#about' }} />
+                    <NavItem icon={<ProjectIcon />} text="projects" linkProps={{ href: '#projects' }} />
+                    <NavItem icon={<LinkIcon />} text="my links" linkProps={{ href: '#links '}} />
+                </ul>
+            </nav>
+        </>
     )
 }

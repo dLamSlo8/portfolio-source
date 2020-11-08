@@ -1,0 +1,23 @@
+.section-layout {
+    padding: 0 3rem;
+    margin: 5rem auto;
+    max-width: 1600px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:only-of-type {
+        margin: 0;
+        padding: 0;
+    }
+
+    @include mq('md-lg') {
+        padding: 0 5rem;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+}
