@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 
 export default function Home() {
     return (
-        <>
+        <div style={{scrollBehavior: 'smooth'}}>
             <SEO />
             <Header />
             <AboutSection />
@@ -17,6 +17,6 @@ export default function Home() {
             <ProjectSection />
             <LinkSection />
             <Footer />
-        </>
+        </div>
     )
 }

@@ -6,11 +6,14 @@ export default function SEO() {
     const { site: { siteMetadata: { title, description , keywords } } } = useStaticQuery(
         graphql`
             query {
-                siteMetadata {
-                    title
-                    description
-                    keywords
+                site {
+                    siteMetadata {
+                        title
+                        description
+                        keywords
+                    }
                 }
+
             }
         `
     );

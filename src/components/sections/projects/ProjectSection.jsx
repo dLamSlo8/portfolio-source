@@ -47,8 +47,6 @@ export default function ProjectSection() {
         }
     `);
 
-    console.log(projects);
-
     return (
         <SectionLayout 
         id="projects" 

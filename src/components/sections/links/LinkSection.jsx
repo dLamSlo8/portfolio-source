@@ -20,9 +20,21 @@ export default function LinkSection() {
             rootClass="mb-2 links-body__nav-wrapper" 
             ariaLabel="Info Links"
             listClass="links-body__links">
-                <NavItem icon={<DocumentIcon />} text="Resume" rootClass="navbar__item--my-links" linkProps={{ href: Resume }} />
-                <NavItem icon={<GithubIcon />} text="GitHub" rootClass="navbar__item--my-links" linkProps={{ href: 'https://www.github.com/dLamSlo8' }} />
-                <NavItem icon={<LinkedInIcon />} text="LinkedIn™" rootClass="navbar__item--my-links" linkProps={{ href: 'https://www.linkedin.com/in/derek-lam-slo8/' }} />
+                <NavItem 
+                icon={<DocumentIcon />} 
+                text="Resume" 
+                rootClass="navbar__item--my-links" 
+                linkProps={{ href: Resume, target: '_blank', rel: 'noreferrer noopener' }} />
+                <NavItem 
+                icon={<GithubIcon />} 
+                text="GitHub" 
+                rootClass="navbar__item--my-links" 
+                linkProps={{ href: 'https://www.github.com/dLamSlo8', target: '_blank', rel: 'noreferrer noopener' }} />
+                <NavItem 
+                icon={<LinkedInIcon />} 
+                text="LinkedIn™" 
+                rootClass="navbar__item--my-links" 
+                linkProps={{ href: 'https://www.linkedin.com/in/derek-lam-slo8/', target: '_blank', rel: 'noreferrer noopener' }} />
             </NavbarLayout>
             <h2 className="heading heading--lg">Here's where you can contact me.</h2>
             <p className="links-body__sub-text">I'm actively looking for job opportunities as a frontend developer, so if I piqued your interest, feel free to reach out!</p>
@@ -30,8 +42,16 @@ export default function LinkSection() {
             rootClass="links-body__nav-wrapper"
             ariaLabel="Contact Links" 
             listClass="links-body__links">
-                <NavItem icon={<EmailIcon />} text="Email Me" rootClass="navbar__item--my-links" linkProps={{ href: 'mailto:dereklam67@gmail.com' }} />
-                <NavItem icon={<LinkedInIcon />} text="LinkedIn™" rootClass="navbar__item--my-links" linkProps={{ href: 'https://www.linkedin.com/in/derek-lam-slo8/' }} />
+                <NavItem 
+                icon={<EmailIcon />} 
+                text="Email Me" 
+                rootClass="navbar__item--my-links" 
+                linkProps={{ href: 'mailto:dereklam67@gmail.com', target: '_blank', rel: 'noreferrer noopener' }} />
+                <NavItem 
+                icon={<LinkedInIcon />} 
+                text="LinkedIn™" 
+                rootClass="navbar__item--my-links" 
+                linkProps={{ href: 'https://www.linkedin.com/in/derek-lam-slo8/', target: '_blank', rel: 'noreferrer noopener' }} />
             </NavbarLayout>
         </SectionLayout>
     )
