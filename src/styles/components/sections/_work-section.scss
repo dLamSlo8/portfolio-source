@@ -5,6 +5,10 @@
         font-weight: 600;
         margin-bottom: 2.5rem;
     }
+
+    &__link {
+        text-decoration: underline;
+    }
 }
 .work {
     &:not(:last-child) {

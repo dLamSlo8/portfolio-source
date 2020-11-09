@@ -4,15 +4,10 @@ github: https://github.com/jupytercalpoly/jupyterlab-richtext-mode
 desktop_cover: jupyterlab-richtext-mode.png
 desktop_alt: JupyterLab Rich-text Extension
 stack:
-  - HTML
-  - CSS
   - React
   - TypeScript
   - ProseMirror
-learned: "This was my first work experience with React and TypeScript, and my first time working with a large, open-source codebase implemented with software development 
-patterns that I'd never heard of, like factories. I learned how to create a rich text editor with ProseMirror and integrate that with React, albeit the React code wasn't 
-the most performant, it was an experience meant for growth and left me wanting to learn more. Also, I learned to work closely alongisde a UI/UX designer, whether it be
-collaboratively conducting user research or bouncing ideas off each other."
+learned: "With this extension developed during my time at Project Jupyter, I learned React at a basic level, and learned how to integrate it with a custom-built rich text editor using the ProseMirror toolkit. I was also introduced to the complexity of large codebases and was immediately mortified as to where to find what I needed, but found my place after asking questions through the open source community, my co-interns, and my managers. Although the React code wasn't the most performant, it was an experience meant for growth and left me wanting to learn more. "
 ---
 
 An extension for JupyterLab that transforms Markdown cells into rich text-editing cells. The editor for these cells

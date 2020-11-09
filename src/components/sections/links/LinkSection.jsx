@@ -15,7 +15,7 @@ export default function LinkSection() {
         icon={<LinkIcon />} 
         title="My Links"
         bodyClass="links-body section-layout__body--short">
-            <h2 className="heading heading--lg links-body__heading">Here's where you can find more information about me.</h2>
+            <h2 className="heading heading--lg links-body__spaced-heading">Here's where you can find more information about me.</h2>
             <NavbarLayout
             rootClass="mb-2 links-body__nav-wrapper" 
             ariaLabel="Info Links"
@@ -24,7 +24,7 @@ export default function LinkSection() {
                 <NavItem icon={<GithubIcon />} text="GitHub" rootClass="navbar__item--my-links" linkProps={{ href: 'https://www.github.com/dLamSlo8' }} />
                 <NavItem icon={<LinkedInIcon />} text="LinkedIn™" rootClass="navbar__item--my-links" linkProps={{ href: 'https://www.linkedin.com/in/derek-lam-slo8/' }} />
             </NavbarLayout>
-            <h2 className="heading heading--lg links-body__heading">Here's where you can contact me.</h2>
+            <h2 className="heading heading--lg">Here's where you can contact me.</h2>
             <p className="links-body__sub-text">I'm actively looking for job opportunities as a frontend developer, so if I piqued your interest, feel free to reach out!</p>
             <NavbarLayout 
             rootClass="links-body__nav-wrapper"

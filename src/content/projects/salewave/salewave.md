@@ -10,8 +10,6 @@ learned: 'This was my first time using React to build a single page application,
 as mentioned previously. It was my introduction into using functional components within React, using React Router, and creating custom hooks to abstract functionality such as 
 storing form data, validating form data, and cancelling Axios calls.'
 stack:
-  - HTML
-  - CSS
   - React
 ---
 

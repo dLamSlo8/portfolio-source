@@ -12,11 +12,12 @@ export default function AboutSection() {
             <section className="about-body__description">
                 <p className="mt-0">
                     Hi! I'm Derek, a <strong>frontend developer</strong> based in <strong>Los Angeles, CA</strong>, and recent <strong>Computer Science graduate</strong> from California Polytechnic State University - San Luis Obispo. 
-                    I am passionate about creating <strong>pixel-perfect user experiences</strong> and transforming designs into <strong>performant and responsive applications.</strong>
+                    I am passionate about creating <strong>user experiences</strong> that are both <strong>performant and responsive</strong>, whether it be transforming another person's design
+                    into code, or building personal web app projects for myself and others.
                 </p>
                 <p>
-                    As a developer, I'm constantly trying to improve upon my current skills while learning new ones. Currently, I have professional work experience with <strong>HTML, CSS, JS/TS, ReactJS, Bootstrap, and jQuery.</strong> As for new skills, I'm not only learning new technologies like <strong>TailwindCSS</strong> and <strong>GatsbyJS</strong>, 
-                    but also learning to be better equipped for creating accessible experiences (with WCAG), and for better performance in my React applications.
+                    As a developer, I'm constantly trying to improve upon my current skills/technologies while learning new ones. Currently, I have professional work experience with <strong>HTML, CSS, JS/TS, ReactJS, Bootstrap, and jQuery.</strong> As for new skills, I'm not only learning new technologies like <strong>TailwindCSS</strong> and <strong>GatsbyJS</strong>, 
+                    but also learning to be better equipped for creating accessible experiences (following WCAG), and for better performance in my websites and web applications.
                 </p>
                 <p>
                     The following is a list of technologies that I currently work with for personal and freelance projects, and also ones that I've had 

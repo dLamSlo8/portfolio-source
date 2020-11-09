@@ -69,8 +69,11 @@
 
     &__links {
         display: flex;
-        align-items: center;     
-        margin-top: 1rem;   
+        align-items: center;
+        margin-top: 0.25rem;
+        @include mq('sm') {
+            margin-top: 1rem;   
+        }     
     }
 
     &__link {

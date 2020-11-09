@@ -3,11 +3,8 @@
     @include mq('sm') {
         text-align: left;
     }
-    &__heading {
+    &__spaced-heading {
         margin-bottom: 1rem;
-        &:last-child {
-            margin-bottom: 0;
-        }
     }
     
     &__sub-text {
