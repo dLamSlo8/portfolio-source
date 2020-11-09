@@ -7,7 +7,9 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-      title: 'Derek Lam | Frontend Developer Portfolio'
+      title: 'Derek Lam | Frontend Developer Portfolio',
+      description: "Derek Lam is a frontend developer who enjoys bringing concepts to life with responsive websites and web apps.",
+      keywords: ['Frontend Developer', 'Portfolio']
   },
   plugins: [
       {

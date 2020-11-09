@@ -1,4 +1,5 @@
 import React from "react"
+import SEO from '../components/SEO';
 import Header from '../components/Header';
 import AboutSection from '../components/sections/about/AboutSection';
 import WorkExperienceSection from '../components/sections/work/WorkExperienceSection';
@@ -9,6 +10,7 @@ import Footer from '../components/Footer';
 export default function Home() {
     return (
         <>
+            <SEO />
             <Header />
             <AboutSection />
             <WorkExperienceSection />
