@@ -8,6 +8,8 @@ import { ReactComponent as BriefcaseIcon } from '../media/icons/briefcase.svg';
 import { ReactComponent as ProjectIcon } from '../media/icons/code.svg';
 import { ReactComponent as LinkIcon } from '../media/icons/link.svg';
 import { ReactComponent as HamburgerIcon } from '../media/icons/menu.svg';
+import { ReactComponent as CloseIcon } from '../media/icons/x.svg';
+
 import NavItem from './layouts/navbar/NavItem';
 
 export default function Home() {
@@ -35,6 +37,7 @@ export default function Home() {
         <header className="header" ref={heroForwardRef}>
             <button 
             className="navbar__hamburger"
+            aria-label="Open mobile menu"
             onClick={handleOpenMenu}>
                 <HamburgerIcon />
             </button>
@@ -49,7 +52,14 @@ export default function Home() {
                 <NavItem icon={<BriefcaseIcon />} text="Work" linkProps={{ href: '#work' }} rootClass="navbar__item--main" onClick={handleCloseMenu} />
                 <NavItem icon={<ProjectIcon />} text="Projects" linkProps={{ href: '#projects' }} rootClass="navbar__item--main" onClick={handleCloseMenu} />
                 <NavItem icon={<LinkIcon />} text="Links" linkProps={{ href: '#links '}} rootClass="navbar__item--main" onClick={handleCloseMenu} />
+                <button 
+                className={`icon navbar--main__close ${!mobileMenuOpen ? 'navbar--main__close--closed' : ''}`} 
+                aria-label="Close mobile menu"
+                onClick={handleCloseMenu}>
+                    <CloseIcon />
+                </button>
             </NavbarLayout>
+
             <Hero />
             <div className="header__learn-more">
                 <p className="header__learn-more-text mt-0">Learn more about me</p>

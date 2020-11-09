@@ -63,8 +63,27 @@
                     visibility 200ms linear;
         backdrop-filter: blur(7.5px);
         
+        &__close {
+            position: absolute;
+            background-color: white;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.25rem;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            transition: background-color 200ms ease-in-out,
+                        visibility 0ms linear;
+            box-shadow: 0px 0px 3px 1.5px rgb(191,216,255);
 
+            &:hover {
+                background-color: rgb(191,216,255);
+            }
 
+            &--closed {
+                visibility: hidden;
+            }
+        }
 
         &--mobile-active {
             width: 75%;
@@ -95,11 +114,14 @@
     }
 
     &--scrolled {
-        box-shadow: 0px 3px 6px 5px rgba(0, 0, 0, 0.1);
+        @include mq('md') {
+            box-shadow: 0px 3px 6px 5px rgba(0, 0, 0, 0.1);
 
-        & .navbar__items {
-            transform: translateY(0);
+            & .navbar__items {
+                transform: translateY(0);
+            }
         }
+
     }
     
     &__items {
@@ -116,8 +138,10 @@
         }
 
         &--main {
-            transform: translateY(1rem);
-            transition: transform 150ms ease-in-out;
+            @include mq('md') {
+                transform: translateY(1rem);
+                transition: transform 150ms ease-in-out;
+            }
         }
     }
 
