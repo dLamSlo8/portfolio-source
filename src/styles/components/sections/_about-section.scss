@@ -33,6 +33,10 @@
     }
 
     &__skills-heading {
+        text-align: center;
+        @include mq('xxs') {
+            text-align: left;
+        }
         font-size: 1.25rem;
 
         @include mq('sm') {
@@ -57,16 +61,29 @@
 
     &__skills-content {
         display: flex;
+        flex-direction: column;
+        @include mq('xxs') {
+            flex-direction: row;
+            align-items: start;
+        }
     }
 
     &__skills-subsection {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include mq('xxs') {
+            align-items: start;
+        }
         padding: 1rem;
         padding-left: 0;
     }
 
     &__skills-subsection:last-child {
-        margin-left: 1rem;
+        @include mq('xxs') {
+            margin-left: 1rem;
+        }
     }
 
     &__subtitle {
@@ -74,8 +91,12 @@
     }
 
     &__list {
-        padding-left: 1rem;
-        list-style-type: square;
+        text-align: center;
+        @include mq('xxs') {
+            text-align: left;
+            padding-left: 1rem;
+            list-style-type: square;
+        }
     }
 
     &__list-item {

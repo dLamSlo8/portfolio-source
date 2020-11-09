@@ -20,7 +20,7 @@ export default function AboutSection() {
                     but also learning to be better equipped for creating accessible experiences (following WCAG), and for better performance in my websites and web applications.
                 </p>
                 <p>
-                    The following is a list of technologies that I currently work with for personal and freelance projects, and also ones that I've had 
+                    The following is a list of technologies that I currently work with for personal projects, and also ones that I've had 
                     varying levels of experience with and would be willing to pick up again whether for a personal or work-related project.                    
                 </p>
             </section>
@@ -28,16 +28,17 @@ export default function AboutSection() {
                 <h2 className="heading about-body__skills-heading">Technologies I Currently Use</h2>
                 <div className="about-body__skills-content">
                     <div className="about-body__skills-subsection">
+                        <h3 className="heading heading--sm heading--space-b">Core</h3>
                         <ul className="list about-body__list">
                             <li className="about-body__list-item">HTML</li>
-                            <li className="about-body__list-item">CSS</li>
+                            <li className="about-body__list-item">CSS/SASS</li>
                             <li className="about-body__list-item">JavaScript (ES6)</li>
                         </ul>
                     </div>
                     <div className="about-body__skills-subsection">
+                        <h3 className="heading heading--sm heading--space-b">Frameworks</h3>
                         <ul className="list about-body__list">
                             <li className="about-body__list-item">TailwindCSS</li>
-                            <li className="about-body__list-item">Sass</li>
                             <li className="about-body__list-item">ReactJS</li>
                             <li className="about-body__list-item">GatsbyJS</li>
                             <li className="about-body__list-item">NextJS</li>

@@ -1,11 +1,12 @@
 
 $breakpoints: (
-    "phone":        400px,
-    "xs":   480px,
+    "xxs": 400px,
+    "xs": 480px,
+    'xs-sm': 550px,
     "sm": 640px,
     "md": 768px,
-    "md-lg":       950px,
-    "lg":  1024px,
-    "xl":      1248px,
-    "desktop-wide": 1440px
+    "md-lg": 950px,
+    "lg": 1024px,
+    "xl": 1248px,
+    "xxl": 1440px
 );
