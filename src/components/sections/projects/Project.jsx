@@ -13,7 +13,7 @@ export default function Project({ projectInfo: { frontmatter: { title, external,
     return (
             <CSSTransition in={inView} classNames="fade-up" timeout={750}>
 
-            <section className={`project`} ref={ref}>
+            <section className="project" ref={ref}>
                 <div className="project__info">
                     <div className="heading-wrapper projects-body__project-header">
                         <h2 className="heading heading--xl">{title}</h2>

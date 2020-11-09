@@ -1,6 +1,5 @@
 import React from 'react';
 import { CSSTransition } from 'react-transition-group';
-import HeaderLinks from './HeaderLinks';
 
 export default function Hero() {
     return (

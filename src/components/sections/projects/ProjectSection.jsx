@@ -13,7 +13,11 @@ import { ReactComponent as ProjectIcon } from '../../../media/icons/code.svg';
 export default function ProjectSection() {
     const { projects: { edges: projects } } = useStaticQuery(graphql`
         query {
-            projects: allMarkdownRemark {
+            projects: allMarkdownRemark(
+                filter: {
+                    fileAbsolutePath: { regex: "/projects/" }
+                },
+            ) {
             edges {
                 node {
                 frontmatter {

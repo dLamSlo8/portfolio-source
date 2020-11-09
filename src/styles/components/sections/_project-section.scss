@@ -50,12 +50,17 @@
 .project {
     opacity: 0;
     display: flex;
-    
+    flex-direction: column-reverse;
+    @include mq('md-lg') {
+        flex-direction: row;
+    }
     margin-bottom: 5rem;
 
     &__info {
         flex: 0 1 100%; // Grow, shrink, basis
-        margin-right: 2rem;
+        @include mq('md-lg') {
+            margin-right: 2rem;
+        }
     }
 
     &__subsection {
@@ -95,11 +100,19 @@
 
 
     &__media {
+        align-self: center;
         display: flex;
         position: relative;
-        min-width: 280px;
+        min-width: 80%;
+        @include mq('md-lg') {
+            min-width: 280px;
+        }
         flex: 0 1 100%;
-        margin-left: 2rem;
+        margin-bottom: 2rem;
+        @include mq('md-lg') {
+            margin: 0 0 0 2rem;
+        }
+        
         height: fit-content;
         align-items: center;
     }
@@ -124,15 +137,29 @@
     }
 
     &__stack-list {
-        display: inline-flex;
-        margin-left: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        list-style-type: square;
+        @include mq('sm') {
+            display: inline-flex;
+            flex-direction: row;
+            list-style-type: none;
+        }
+        margin: 1rem 0 0 1rem;
+        @include mq('sm') {
+            margin: 0 0 0 0.75rem;
+
+        }
         font-family: var(--font-secondary);
         font-weight: 500;
         color: var(--color-primary-light);
     }
 
     &__stack-item {
-        margin-right: 1rem;
+        margin-bottom: 1rem;
+        @include mq('sm') {
+            margin: 0 1rem 0 0;
+        }
     }
 
     &__emphasis-text {

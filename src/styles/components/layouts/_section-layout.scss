@@ -1,5 +1,12 @@
 .section-layout {
-    padding: 0 3rem;
+    padding: 0 1.5rem;
+    @include mq('md') {
+        padding: 0 3rem;
+    }
+    @include mq('lg') {
+        padding: 0 5rem;
+    }
+
     margin: 5rem auto;
     max-width: 1600px;
 
@@ -12,24 +19,42 @@
         padding: 0;
     }
 
-    @include mq('md-lg') {
-        padding: 0 5rem;
-    }
 
     &__header {
         display: flex;
+        flex-direction: column;
+        @include mq('xs') {
+            flex-direction: row;
+        }
         align-items: center;
+
+
+        &-icon {
+            margin-bottom: 1rem;
+            @include mq('xs') {
+                margin: 0 2rem 0 0;
+            }
+        }
     }
+
+
 
     &__body {
         position: relative;
-        padding-left: calc(30px + 1.75rem);
+        @include mq('md') {
+            padding-left: calc(30px + 1.75rem);
+        }
         margin-top: 2rem;
-        margin-left: 1.25rem;
+        @include mq('md') {
+            margin-left: 1.25rem;
+        }
     
         &::before {
             content: '';
-            display: block;
+            display: none;
+            @include mq('md') {
+                display: block;
+            }
             position: absolute;
             top: 0;
             left: 0;
