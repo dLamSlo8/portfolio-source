@@ -38,7 +38,7 @@ export default function WorkExperienceSection() {
         title="Work Experience"
         bodyClass="work-body">
             <p className="work-body__description">Below is a list of where I've worked as well as a synopsis of what I gained from the experiences. More 
-            information is available on my <a className="work-body__link" href={Resume}>resume</a> (also linked in the <a className="work-body__link" href="#links">'My Links'</a> section!)</p>
+            information is available on my <a className="work-body__link" href={Resume} target="_blank" rel="noreferrer noopener">resume</a> (also linked in the <a className="work-body__link" href="#links">'My Links'</a> section!)</p>
         {
             work.map(({ node: { frontmatter: { workplace, role, timeWorked }, html: body } }) => (
                 <WorkExperience

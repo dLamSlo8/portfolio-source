@@ -44,10 +44,10 @@ export default function Project({ projectInfo: { frontmatter: { title, external,
                         <div className="project__links">
                             <span className="project__emphasis-text">Links: </span>
                         {
-                            github && <a className="project__link" href={github} target="_blank" rel="noreferrer"><GithubIcon className="icon icon--small project__link-icon" /></a>
+                            github && <a className="project__link" href={github} target="_blank" rel="noreferrer noopener"><GithubIcon className="icon icon--small project__link-icon" /></a>
                         }
                         {
-                            external && <a className="project__link" href={external} target="_blank" rel="noreferrer"><LinkIcon className="icon icon--small project__link-icon" /></a>
+                            external && <a className="project__link" href={external} target="_blank" rel="noreferrer noopener"><LinkIcon className="icon icon--small project__link-icon" /></a>
                         }
                         </div>
                     </div>
