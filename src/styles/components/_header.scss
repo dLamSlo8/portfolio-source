@@ -1,7 +1,6 @@
 // Header styles
 
 .header {
-
     padding: 10rem 1.5rem 0 1.5rem;
 
     @include mq('md') {
@@ -16,6 +15,7 @@
     @include mq('xs-sm', min, height) {
         padding-top: 5rem;
     }
+
     min-height: 100vh;
     max-width: 1600px;
     margin: 0 auto;
@@ -26,6 +26,8 @@
     background-color: var(--color-secondary);
     font-family: var(--font-primary);
 
+
+    
     &__learn-more {
         margin-top: auto;
         margin-bottom: 2rem;
@@ -43,4 +45,5 @@
             margin-bottom: 0;
         }
     }
+    
 }

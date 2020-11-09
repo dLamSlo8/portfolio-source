@@ -54,8 +54,10 @@
     @include mq('md-lg') {
         flex-direction: row;
     }
-    margin-bottom: 5rem;
-
+    margin-bottom: 2.5rem;
+    @include mq('md-lg') {
+        margin-bottom: 3.5rem;
+    }
     &__info {
         flex: 0 1 100%; // Grow, shrink, basis
         @include mq('md-lg') {
@@ -111,7 +113,7 @@
             min-width: 280px;
         }
         flex: 0 1 100%;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         @include mq('md-lg') {
             margin: 0 0 0 2rem;
         }
@@ -180,8 +182,8 @@
 .fade-up-enter-active {
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 750ms ease-in-out,
-                transform 750ms ease-in-out;
+    transition: opacity 350ms ease-in-out,
+                transform 350ms ease-in-out;
 }
 
 .fade-up-enter-done {

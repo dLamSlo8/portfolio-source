@@ -1,13 +1,17 @@
 .section-layout {
-    padding: 5.25rem 0.75rem 0;
+    padding: 3rem 0.75rem 0;
     @include mq('sm') {
-        padding: 5.25rem 1.5rem 0;
+        padding: 3rem 1.5rem 0;
     }
     @include mq('md') {
         padding: 5.25rem 3rem 0;
     }
     @include mq('lg') {
         padding: 5.25rem 5rem 0;
+    }
+
+    &:last-child {
+        padding-top: 0rem;
     }
 
     max-width: 1600px;
