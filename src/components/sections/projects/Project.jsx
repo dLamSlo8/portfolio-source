@@ -1,16 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import { ReactComponent as GithubIcon } from '../../../media/icons/github.svg';
 import { ReactComponent as LinkIcon } from '../../../media/icons/external-link.svg';
-import { useInView } from 'react-intersection-observer';
-import { CSSTransition } from 'react-transition-group';
 import FadeLayout from '../../layouts/FadeLayout';
 import ProjectMedia from './ProjectMedia';
-export default function Project({ projectInfo: { frontmatter: { title, external, github, stack, desktop_cover, desktop_alt, mobile_cover, mobile_alt, learned }, html: bodyContent }}) {
-    const { ref, inView, entry } = useInView({
-        triggerOnce: true,
-        delay: 300
-    });
 
+export default function Project({ projectInfo: { frontmatter: { title, external, github, stack, desktop_cover, desktop_alt, mobile_cover, mobile_alt, learned }, html: bodyContent }}) {
     return (
         <FadeLayout 
         direction="up" 
@@ -44,10 +38,10 @@ export default function Project({ projectInfo: { frontmatter: { title, external,
                         <div className="project__links">
                             <span className="project__emphasis-text">Links: </span>
                         {
-                            github && <a className="project__link" href={github} target="_blank" rel="noreferrer noopener"><GithubIcon className="icon icon--small project__link-icon" /></a>
+                            github && <a className="project__link" href={github} target="_blank" rel="noreferrer noopener" aria-label="Github Link"><GithubIcon className="icon icon--small project__link-icon" /></a>
                         }
                         {
-                            external && <a className="project__link" href={external} target="_blank" rel="noreferrer noopener"><LinkIcon className="icon icon--small project__link-icon" /></a>
+                            external && <a className="project__link" href={external} target="_blank" rel="noreferrer noopener" aria-label="External Link"><LinkIcon className="icon icon--small project__link-icon" /></a>
                         }
                         </div>
                     </div>

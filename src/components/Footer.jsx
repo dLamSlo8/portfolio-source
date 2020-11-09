@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer className="footer">
             <p className="footer__description">Developed using</p>
-            <p className="footer__stack">SASS &amp; GatsbyJS</p>
+            <p className="footer__stack">SASS, GatsbyJS, and Feather Icons</p>
             <a 
             className="footer__link" 
             href="https://github.com/dLamSlo8/portfolio-source" 

@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import SectionLayout from '../../layouts/SectionLayout';
 import Project from './Project';
-
-import ProjectMedia from './ProjectMedia';
-import Tooltip from '../../Tooltip';
 
 import { ReactComponent as ProjectIcon } from '../../../media/icons/code.svg';
 
