@@ -38,7 +38,7 @@ export default function Home() {
     const handleNavItemClick = (e, id) => {
         handleCloseMenu(e);
 
-        // document.querySelector(id).scrollIntoView();
+        document.querySelector(id).scrollIntoView();
     }
 
     return (
