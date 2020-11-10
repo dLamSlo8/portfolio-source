@@ -11,7 +11,7 @@ export default function NavItem({ icon, text, linkProps, isNativeLink=true, root
                     <a className="navbar__link" {...linkProps}>
                     {
                         icon && (
-                            <div className="icon icon--xs navbar__icon">
+                            <div className="icon icon--xs navbar__icon" aria-hidden="true">
                                 {icon}
                             </div>
                         )
@@ -24,7 +24,7 @@ export default function NavItem({ icon, text, linkProps, isNativeLink=true, root
                     <Link className="navbar__link" {...linkProps}>
                     {
                         icon && (
-                            <div className="icon icon--xs navbar__icon">
+                            <div className="icon icon--xs navbar__icon" aria-hidden="true">
                                 {icon}
                             </div>
                         )

@@ -146,30 +146,16 @@
 
     &__item {
         cursor: pointer;
-        border-radius: 0.5rem;
-        border: 3px solid var(--color-primary);
         font-size: 1.1rem;
         font-weight: 500;
         font-family: var(--font-secondary);
-        transition: background-color 200ms ease-in-out;
 
         &--vertical {
             margin-right: 0;
             margin-bottom: 1rem;
         }
 
-        &:hover {
-            background-color: var(--color-primary);
-        }
-    
-        &:hover .navbar__link {
-            color: var(--color-secondary);
-        }
-    
-        &:hover .navbar__icon {
-            fill: var(--color-secondary);
-            color: var(--color-secondary);
-        }
+
     
         &:last-child {
             margin-right: 0;
@@ -221,8 +207,21 @@
         align-items: center;
         height: 100%;
         text-decoration: none;
-        transition: color 200ms ease-in-out;
         padding: 0.75rem 1.25rem;
+        border-radius: 0.5rem;
+        border: 3px solid var(--color-primary);
+        transition: background-color 200ms ease-in-out,
+                    color 200ms ease-in-out;
+
+        &:hover {
+            background-color: var(--color-primary);
+            color: var(--color-secondary);
+        }
+
+        &:hover .navbar__icon {
+            fill: var(--color-secondary);
+            color: var(--color-secondary);
+        }
     }
 
     &__icon {
