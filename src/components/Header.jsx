@@ -35,12 +35,6 @@ export default function Home() {
 
     }
 
-    const handleNavItemClick = (e, id) => {
-        handleCloseMenu(e);
-
-        document.querySelector(id).scrollIntoView();
-    }
-
     return (
         <header className="header" ref={heroForwardRef}>
             <button 
@@ -59,27 +53,31 @@ export default function Home() {
                 <NavItem 
                 icon={<PersonIcon />} 
                 text="About" 
-                linkProps={{ href: '#about' }} 
+                isNativeLink={false}
+                linkProps={{ to: '/#about' }} 
                 rootClass="navbar__item--main" 
-                onClick={(e) => handleNavItemClick(e, '#about')} />
+                onClick={handleCloseMenu} />
                 <NavItem 
                 icon={<BriefcaseIcon />} 
                 text="Work" 
-                linkProps={{ href: '#work' }} 
+                isNativeLink={false}
+                linkProps={{ to: '/#work' }} 
                 rootClass="navbar__item--main" 
-                onClick={(e) => handleNavItemClick(e, '#work')} />
+                onClick={handleCloseMenu} />
                 <NavItem 
                 icon={<ProjectIcon />} 
                 text="Projects" 
-                linkProps={{ href: '#projects' }} 
+                isNativeLink={false}
+                linkProps={{ to: '/#projects' }} 
                 rootClass="navbar__item--main" 
-                onClick={(e) => handleNavItemClick(e, '#projects')} />
+                onClick={handleCloseMenu} />
                 <NavItem 
                 icon={<LinkIcon />} 
                 text="Links" 
-                linkProps={{ href: '#links' }} 
+                isNativeLink={false}
+                linkProps={{ to: '/#links' }} 
                 rootClass="navbar__item--main" 
-                onClick={(e) => handleNavItemClick(e, '#links')} />
+                onClick={handleCloseMenu} />
                 <button 
                 className={`icon navbar--main__close ${mobileMenuOpen ? 'navbar--main__close--opened' : ''}`} 
                 aria-label="Close mobile menu"
