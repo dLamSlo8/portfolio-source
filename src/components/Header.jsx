@@ -38,9 +38,7 @@ export default function Home() {
     const handleNavItemClick = (e, id) => {
         handleCloseMenu(e);
 
-        document.querySelector(id).scrollIntoView({
-            behavior: 'smooth'
-        });
+        // document.querySelector(id).scrollIntoView();
     }
 
     return (
@@ -79,7 +77,7 @@ export default function Home() {
                 <NavItem 
                 icon={<LinkIcon />} 
                 text="Links" 
-                linkProps={{ href: '#links '}} 
+                linkProps={{ href: '#links' }} 
                 rootClass="navbar__item--main" 
                 onClick={(e) => handleNavItemClick(e, '#links')} />
                 <button 

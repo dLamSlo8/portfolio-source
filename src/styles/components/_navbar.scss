@@ -18,7 +18,10 @@
         &:hover {
             background-color: rgb(191,216,255);
         }
-        
+        @include mq('md') {
+            visibility: hidden;
+            pointer-events: none;
+        }
     }
 
     &__backdrop {

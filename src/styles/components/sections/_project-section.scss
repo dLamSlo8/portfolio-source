@@ -54,9 +54,9 @@
     @include mq('md-lg') {
         flex-direction: row;
     }
-    margin-bottom: 2.5rem;
+    margin-bottom: 3.5rem;
     @include mq('md-lg') {
-        margin-bottom: 3.5rem;
+        margin-bottom: 5rem;
     }
     &__info {
         flex: 0 1 100%; // Grow, shrink, basis
