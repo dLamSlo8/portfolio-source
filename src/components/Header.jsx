@@ -83,7 +83,7 @@ export default function Home() {
                 rootClass="navbar__item--main" 
                 onClick={(e) => handleNavItemClick(e, '#links')} />
                 <button 
-                className={`icon navbar--main__close ${!mobileMenuOpen ? 'navbar--main__close--closed' : ''}`} 
+                className={`icon navbar--main__close ${mobileMenuOpen ? 'navbar--main__close--opened' : ''}`} 
                 aria-label="Close mobile menu"
                 onClick={handleCloseMenu}>
                     <CloseIcon />

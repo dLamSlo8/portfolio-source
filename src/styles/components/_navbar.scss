@@ -47,8 +47,6 @@
     }
 
     &--main {
-        visibility: hidden;
-        pointer-events: none;
         position: fixed;
         right: 0;
         top: 0;
@@ -59,8 +57,7 @@
         z-index: 10;
         background-color: rgba(255, 255, 255, 0.8);
         transition: box-shadow 150ms ease-in-out,
-                    transform 200ms ease-in-out,
-                    visibility 200ms linear;
+                    transform 200ms ease-in-out;
         backdrop-filter: blur(7.5px);
         
         &__close {
@@ -72,26 +69,27 @@
             border-radius: 50%;
             border: none;
             cursor: pointer;
-            transition: background-color 200ms ease-in-out,
-                        visibility 0ms linear;
+            visibility: hidden;
+            pointer-events: none;
+            transition: background-color 200ms ease-in-out;
+            
             box-shadow: 0px 0px 3px 1.5px rgb(191,216,255);
 
             &:hover {
                 background-color: rgb(191,216,255);
             }
 
-            &--closed {
-                visibility: hidden;
+            &--opened {
+                visibility: visible;
+                pointer-events: all;
             }
         }
 
         &--mobile-active {
-            width: 75%;
+            width: 80%;
             @include mq('xxs') {
-                width: 60%;
+                width: 70%;
             }
-            visibility: visible;
-            pointer-events: all;
             bottom: 0;
             justify-content: center;
             padding: 2rem;
@@ -103,8 +101,6 @@
 
         @include mq('md') {
             width: 100%;
-            visibility: visible;
-            pointer-events: all;
             left: 0;
             bottom: auto;
             justify-content: flex-end;
