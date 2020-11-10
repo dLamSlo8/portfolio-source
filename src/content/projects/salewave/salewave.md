@@ -5,9 +5,7 @@ mobile_cover: salewave-mobile.png
 mobile_alt: Salewave mobile website
 desktop_cover: salewave-desktop.png
 desktop_alt: Salewave desktop website
-learned: "This was my first time using React to build a single page application, as my only prior experience was building components as part of a larger web application, JupyterLab,
-as mentioned previously. It was my introduction into using functional components within React, using React Router, and creating custom hooks to abstract functionality such as 
-storing form data, validating form data, and cancelling Axios calls."
+learned: "This was my first time using React to build a single page application, as my only prior experience was building components as part of a larger web application, JupyterLab, as mentioned previously. It was my introduction into using functional components within React, using React Router, and creating custom hooks to abstract functionality such as storing form data, validating form data, and cancelling Axios calls."
 stack:
   - React
 ---

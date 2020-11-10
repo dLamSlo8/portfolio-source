@@ -2,7 +2,6 @@ import React from 'react';
 import Img from 'gatsby-image';
 
 export default function ProjectMedia({ desktop, mobile }) {
-    console.log(mobile);
     return (
         <div className="project__media">
             <div className="project__desktop-media">
