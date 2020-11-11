@@ -7,9 +7,7 @@ export default function NavbarLayout({ rootClass, listClass, ariaLabel, children
         {...(ariaLabel && {
             "aria-label": ariaLabel
         })}>
-            <ul className={`navbar__items ${listClass ?? ''}`}>
-                {children}
-            </ul>
+            { children }
         </nav>
     )
 }
