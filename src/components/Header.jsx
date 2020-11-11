@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import MainNavbar from './MainNavbar';
 import Hero from './Hero';
 import { ReactComponent as DownIcon } from '../media/icons/chevron-down.svg';
 
-import NavItem from './layouts/navbar/NavItem';
 
 export default function Home() {
     const { ref: heroForwardRef, inView } = useInView({
