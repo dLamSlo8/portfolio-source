@@ -10,4 +10,4 @@ stack:
   - React
 ---
 
-A React-based single-page application created for a freelance client. This project consisted of building out a responsive landing page and user dashboard from a Figma design.
+A React-based single-page application created for a freelance client. This project was a demo site for a startup, and consisted of building out a responsive landing page and user dashboard from a Figma design.
