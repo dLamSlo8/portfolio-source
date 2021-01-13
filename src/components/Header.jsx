@@ -1,5 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
+import { Link } from 'gatsby';
+
 import MainNavbar from './MainNavbar';
 import Hero from './Hero';
 import { ReactComponent as DownIcon } from '../media/icons/chevron-down.svg';
@@ -17,9 +19,9 @@ export default function Home() {
             <Hero />
             <div className="header__learn-more">
                 <p className="header__learn-more-text mt-0">Learn more about me</p>
-                <a className="icon-wrapper icon-wrapper--transition icon-wrapper--hover" href="#about">
+                <Link className="icon-wrapper icon-wrapper--transition icon-wrapper--hover" to="/#about">
                     <DownIcon className="icon" />
-                </a>
+                </Link>
             </div>
         </header>
     )
