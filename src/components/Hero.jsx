@@ -9,7 +9,7 @@ export default function Hero() {
                 <span className="hero__hand-emoji" aria-hidden="true">👋</span>
             </CSSTransition>
             </h1>
-            <h2 className="hero__description">I’m a <strong>frontend developer</strong> who enjoys bringing concepts to life with <strong>responsive websites</strong> and <strong>web apps</strong>.</h2>
+            <h2 className="hero__description">I’m a <strong>frontend developer</strong> who enjoys bringing concepts to life with <strong>impactful websites</strong> and <strong>web apps</strong>.</h2>
         </section>
     )
 }
